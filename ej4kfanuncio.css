@@ -1,0 +1,254 @@
+.container {
+    padding: 0.25rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SLOGAN*/
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+.texto-slogan {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0;
+    animation: aparecer 7s forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto-slogan span {
+    animation: aparecer-letra 2s forwards;
+    opacity: 0;
+    display: inline-block;
+}
+
+@keyframes aparecer-letra {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.texto-slogan span:nth-child(1) {
+    animation-delay: 0s;
+    color: brown;
+}
+
+.texto-slogan span:nth-child(2) {
+    animation-delay: 0.2s;
+    color: burlywood;
+}
+
+.texto-slogan span:nth-child(3) {
+    animation-delay: 0.3s;
+    color: chocolate;
+}
+
+.texto-slogan span:nth-child(4) {
+    animation-delay: 0.4s;
+    color: maroon;
+}
+
+.texto-slogan span:nth-child(5) {
+    animation-delay: 0.5s;
+    color: rgb(185, 95, 95);
+}
+
+.texto-slogan span:nth-child(6) {
+    color: darkred;
+    animation-delay: 0.6s;
+}
+
+.texto-slogan span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.texto-slogan span:nth-child(8) {
+    animation-delay: 1s;
+    ;
+}
+
+.texto-slogan span:nth-child(9) {
+    animation-delay: 1.2s;
+}
+
+.texto-slogan span:nth-child(10) {
+    animation-delay: 1.3s;
+}
+
+.texto-slogan span:nth-child(11) {
+    animation-delay: 1.4s;
+}
+
+.texto-slogan span:nth-child(12) {
+    animation-delay: 1.5s;
+}
+
+.texto-slogan span:nth-child(13) {
+    animation-delay: 1.6s;
+}
+
+.texto-slogan span:nth-child(14) {
+    animation-delay: 1.7s;
+}
+
+.texto-slogan span:nth-child(15) {
+    animation-delay: 1.8s;
+}
+
+.texto-slogan span:nth-child(16) {
+    animation-delay: 1.9s;
+}
+
+.texto-slogan span:nth-child(17) {
+    animation-delay: 2s;
+}
+
+.texto-slogan span:nth-child(18) {
+    animation-delay: 2.2s;
+}
+
+.texto-slogan span:nth-child(19) {
+    animation-delay: 2.3s;
+}
+
+.texto-slogan span:nth-child(20) {
+    animation-delay: 2.4s;
+}
+
+.texto-slogan span:nth-child(21) {
+    animation-delay: 2.5s;
+
+}
+
+.texto-slogan span:nth-child(22) {
+    animation-delay: 2.6s;
+}
+
+.texto-slogan span:nth-child(23) {
+    animation-delay: 3s;
+    color: darkred;
+}
+
+.texto-slogan span:nth-child(24) {
+    animation-delay: 3.1s;
+}
+
+/*LOGO*/
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.padre {
+    width: 200px;
+    height: 200px;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    animation: traslacion 4s ease-in-out infinite;
+}
+
+.padre:hover .hijo {
+    animation-play-state: paused;
+    /*cuando le hacemos hover, la animación para*/
+}
+
+
+
+@keyframes traslacion {
+    0% {
+        background-color: transparent;
+        transform: translateX(0%) translateY(0%);
+    }
+
+    25% {
+        background-color: transparent;
+        transform: translateX(100%) translateY(0%);
+    }
+
+    50% {
+        background-color: transparent;
+        transform: translateX(100%) translateY(100%)
+    }
+
+    75% {
+        background-color: transparent;
+        transform: translateX(0%) translateY(100%)
+    }
+
+    100% {
+        background-color: transparent;
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+
+/*BOTÓN*/
+
+button {
+    margin-top: 4rem;
+    margin-left: 100vh;
+}
+
+@keyframes rotateButton {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilizamos el botón */
+button.rotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Aplicamos la animación al botón */
+button.rotate:hover {
+    animation: rotateButton 2s linear infinite;
+}
